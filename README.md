@@ -1,3 +1,5 @@
 # Retos lenguajes Programación de 2ºDAW y otros de manera autodidacta:
 
-1.- PHP
+- Git y GitHub.
+- PHP.
+- Python.
