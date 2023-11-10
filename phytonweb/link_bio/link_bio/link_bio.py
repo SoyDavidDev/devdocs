@@ -39,6 +39,6 @@ app.add_page(
     index,
     title="SoyDavidDev | Aprendiendo y trabajando en programación y desarrollo de software",
     description="Hola, mi nombre es David Sánchez, Soy Desarrollador Web en formación. |Developer|Backend|Frontend|FullStack|",
-    image="avatar.png"
+    image="favicon.ico"
 )
 app.compile()
