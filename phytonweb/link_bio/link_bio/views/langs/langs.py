@@ -7,18 +7,21 @@ from link_bio.componentes.link_langs import link_langs
 
 def langs() -> rx.Component:
     return rx.vstack(
-        title("Formación en Lenguajes de Desarrollo",
-        ),
+        title("Formación en Lenguajes de Desarrollo"),
         rx.hstack(
             link_langs("icons/python.svg"),
             link_langs("icons/java.svg"),
             link_langs("icons/php.svg"),
+            link_langs("icons/mysql.svg"),
+            spacing = Size.LARGE.value,
+        ),
+            rx.hstack(
             link_langs("icons/html5.svg"),
             link_langs("icons/css3-alt.svg"),
             link_langs("icons/square-js.svg"),
-            spacing = Size.BIG.value
+            spacing = Size.LARGE.value,
         ),
         width="100%",
-        align_items="start",
-        spacing=Size.BIG.value,
+        align_items="center",
+        spacing=Size.VERY_BIG.value,
     )

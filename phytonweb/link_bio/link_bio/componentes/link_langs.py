@@ -6,5 +6,5 @@ def link_langs(icon:str) -> rx.Component:
     return rx.image(
             height = Size.VERY_BIG.value,
             src=icon
-        )
+    )
     

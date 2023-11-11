@@ -32,7 +32,7 @@ BASE_STYLE = {
         "width": "100%",
         "height": "100%",
         "display": "block",
-        "padding": Size.SMALL.value,
+        "padding": Size.LARGE.value,
         "border_radius": Size.DEFAULT.value,
         "color": TextColor.HEADER.value,
         "background_color": Color.CONTENT.value,
@@ -52,7 +52,6 @@ navbar_title_style = dict(
 )
 
 title_style = dict(
-    width="100%",
     padding_top=Size.DEFAULT.value,
     font_size=Size.LARGE.value
 )

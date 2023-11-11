@@ -23,5 +23,4 @@ def navbar() -> rx.Component:
         padding_y=Size.DEFAULT.value,
         z_index="999",
         top="0"
-
     )

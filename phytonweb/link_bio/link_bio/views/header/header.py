@@ -1,7 +1,6 @@
 import reflex as rx
 from link_bio.componentes.link_icon import link_icon
 from link_bio.componentes.info_text import info_text
-from link_bio.componentes.title import title
 from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import TextColor as TextColor
 from link_bio.styles.colors import Color as Color
@@ -55,24 +54,27 @@ def header()-> rx.Component:
             ),
             width="100%"
         ),
-        rx.text("""Actualmente estoy formándome en 2ºDAW como developer. 
-            Formado en PYTHON, PHP, SQL, HTML-CSS-JS, JAVA, C# y PYTHON WEB.
-            Conozco Frameworks/librerías como DJANGO, LARAVEL, BOOTSTRAP, ANGULAR,
-             REACT, SPRING y REFLEX (en continua formación y autodidacta).
+        rx.text("""Formado en: Python, Java, PHP, HTML-CSS-JS, MySQL y C#.
+            Frameworks/librerías como DJANGO, LARAVEL, BOOTSTRAP, ANGULAR,
+            REACT, SPRING y REFLEX.
             Aquí podrás encontrar todos mis enlaces de interés, Linkedin, 
             GIT-HUB y demás proyectos (en construcción)""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
-            text_align = "justify",
+            text_align = "left",
         ),
-                rx.text("""Buscando adquirir 
-            experiencia, me ayudas!? :) 
-            ¡Bienvenid@!""",
+
+        rx.text("""Cursando 2º Desarrollo apps web (DAW)""",
+            font_size=Size.DEFAULT.value,
+            color=TextColor.BODY.value,
+        ),
+        rx.text("""Buscando adquirir experiencia, me ayudas!? :) ¡Bienvenid@!""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
         ),
         spacing = Size.BIG.value,
-        align_items= "start"
+        align_items= "start",
+        width = "100%"
     )
 
 def experience() -> int:

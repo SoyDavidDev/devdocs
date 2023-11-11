@@ -2,6 +2,6 @@ from enum import Enum
 
 
 class Font(Enum):
-    DEFAULT = "Poppins-Light"
-    TITLE = "Poppins-Medium"
-    LOGO = "Aquatico"
+    DEFAULT = "Helvetica"
+    TITLE = "Arial"
+    LOGO = "Courier New"
