@@ -48,10 +48,10 @@ def header()-> rx.Component:
                 "años de formación"
             ),            
             rx.spacer(),
-            info_text(
-                f"{experience()-1}",
-                "años de experiencia"
-            ),
+            # info_text(
+            #     f"{experience()}+",
+            #     "años de experiencia"
+            # ), Poner cuando tenga experiencia. :) 
             width="100%"
         ),
         rx.text("""Formado en: Python, Java, PHP, HTML-CSS-JS, MySQL y C#.
@@ -61,19 +61,19 @@ def header()-> rx.Component:
             GIT-HUB y demás proyectos (en construcción)""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
-            text_align = "left",
+            text_align = "center",
         ),
 
         rx.text("""Cursando 2º Desarrollo apps web (DAW)""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
         ),
-        rx.text("""Buscando adquirir experiencia, me ayudas!? :) ¡Bienvenid@!""",
+        rx.text("""¡Bienvenid@!""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
         ),
         spacing = Size.BIG.value,
-        align_items= "start",
+        align_items= "center",
         width = "100%"
     )
 

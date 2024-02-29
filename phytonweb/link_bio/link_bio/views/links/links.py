@@ -29,7 +29,7 @@ def links() -> rx.Component:
         title("Proyectos"),
         link_button(
             "Mi Web de enlaces",
-            "Esta página está desarrollada con Python y REFLEX",
+            "Página desarrollada con Python y REFLEX",
             "icons/python.svg",
             constants.WEB_LINKS
         ),
