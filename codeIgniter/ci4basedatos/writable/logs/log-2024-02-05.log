@@ -1,0 +1,468 @@
+INFO - 2024-02-05 11:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 11:40:43 --> CSRF token verified.
+INFO - 2024-02-05 11:44:08 --> CSRF token verified.
+INFO - 2024-02-05 11:45:51 --> CSRF token verified.
+INFO - 2024-02-05 11:46:32 --> CSRF token verified.
+INFO - 2024-02-05 11:47:54 --> CSRF token verified.
+INFO - 2024-02-05 11:48:44 --> CSRF token verified.
+INFO - 2024-02-05 11:55:04 --> CSRF token verified.
+INFO - 2024-02-05 11:55:23 --> CSRF token verified.
+INFO - 2024-02-05 11:55:59 --> CSRF token verified.
+INFO - 2024-02-05 11:56:45 --> CSRF token verified.
+INFO - 2024-02-05 11:57:23 --> CSRF token verified.
+INFO - 2024-02-05 11:57:53 --> CSRF token verified.
+INFO - 2024-02-05 11:58:30 --> CSRF token verified.
+INFO - 2024-02-05 11:59:18 --> CSRF token verified.
+INFO - 2024-02-05 12:00:02 --> CSRF token verified.
+INFO - 2024-02-05 12:01:37 --> CSRF token verified.
+INFO - 2024-02-05 12:08:28 --> CSRF token verified.
+CRITICAL - 2024-02-05 12:31:55 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/categories/index.php on line 12.
+ 1 APPPATH/Views/categories/index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/index.php', 12, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('categories/index', [], true)
+ 5 APPPATH/Controllers/Categories.php(20): view('categories/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 12:32:25 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/categories/index.php on line 12.
+ 1 APPPATH/Views/categories/index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/index.php', 12, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('categories/index', [], true)
+ 5 APPPATH/Controllers/Categories.php(20): view('categories/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:05:52 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:06:00 --> CodeIgniter\HTTP\Exceptions\HTTPException: 2 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(2)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(2)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:06:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:06:38 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:08:18 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:08:26 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:08:28 --> CodeIgniter\HTTP\Exceptions\HTTPException: 2 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(2)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(2)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:08:30 --> CodeIgniter\HTTP\Exceptions\HTTPException: 4 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(4)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(4)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:13:39 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:13:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:15:07 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:15:14 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:15:44 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:16:22 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:16:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:27:15 --> CodeIgniter\HTTP\Exceptions\HTTPException: 1 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 155.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(1)
+ 2 SYSTEMPATH/CodeIgniter.php(982): CodeIgniter\HTTP\Response->setStatusCode(1)
+ 3 SYSTEMPATH/CodeIgniter.php(370): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:53:18 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:53:21 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:54:26 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:54:36 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:59:01 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:59:05 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:59:43 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 15:59:48 --> TypeError: Argument 2 passed to CodeIgniter\Exceptions\PageNotFoundException::__construct() must be of the type int, string given, called in /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/Categories.php on line 30
+in SYSTEMPATH/Exceptions/DebugTraceableTrait.php on line 28.
+ 1 APPPATH/Controllers/Categories.php(30): CodeIgniter\Exceptions\PageNotFoundException->__construct('Cannot find the categories item', 'new')
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('new')
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:10:22 --> ErrorException: Undefined variable: categories
+in APPPATH/Views/categories/view.php on line 2.
+ 1 APPPATH/Views/categories/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categories', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('categories/view', [], true)
+ 5 APPPATH/Controllers/Categories.php(36): view('categories/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:11:01 --> ErrorException: Undefined variable: categories
+in APPPATH/Views/categories/view.php on line 2.
+ 1 APPPATH/Views/categories/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categories', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('categories/view', [], true)
+ 5 APPPATH/Controllers/Categories.php(36): view('categories/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:11:03 --> ErrorException: Undefined variable: categories
+in APPPATH/Views/categories/view.php on line 2.
+ 1 APPPATH/Views/categories/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categories', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('categories/view', [], true)
+ 5 APPPATH/Controllers/Categories.php(36): view('categories/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:11:15 --> ErrorException: Undefined variable: categories
+in APPPATH/Views/categories/view.php on line 2.
+ 1 APPPATH/Views/categories/view.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: categories', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/categories/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('categories/view', [], true)
+ 5 APPPATH/Controllers/Categories.php(36): view('categories/view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->show('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 16:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:12:39 --> CSRF token verified.
+INFO - 2024-02-05 16:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 16:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-05 16:34:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
+ 1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH/Controllers/Categories.php(82): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->delete('6')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:36:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
+ 1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH/Controllers/Categories.php(82): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->delete('6')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:36:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
+ 1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH/Controllers/Categories.php(82): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->delete('6')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:36:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH/Database/BaseBuilder.php on line 2763.
+ 1 SYSTEMPATH/Model.php(453): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH/BaseModel.php(1117): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH/Controllers/Categories.php(82): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->delete('6')
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 16:57:11 --> Error: Call to a member function find() on string
+in APPPATH/Controllers/Categories.php on line 103.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Categories->update('2')
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categories))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 17:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:04:13 --> CSRF token verified.
+INFO - 2024-02-05 17:08:10 --> CSRF token verified.
+INFO - 2024-02-05 17:22:21 --> CSRF token verified.
+INFO - 2024-02-05 17:25:14 --> CSRF token verified.
+INFO - 2024-02-05 17:25:58 --> CSRF token verified.
+INFO - 2024-02-05 17:26:10 --> CSRF token verified.
+INFO - 2024-02-05 17:27:46 --> CSRF token verified.
+INFO - 2024-02-05 17:33:42 --> CSRF token verified.
+INFO - 2024-02-05 17:37:26 --> CSRF token verified.
+INFO - 2024-02-05 17:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 17:54:49 --> CSRF token verified.
+INFO - 2024-02-05 18:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 18:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-05 18:55:24 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/view.php on line 6.
+ 1 APPPATH/Views/news/view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/view', [], true)
+ 5 APPPATH/Controllers/News.php(39): view('news/view')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('say-it-isnt-so')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 18:55:54 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/view.php on line 6.
+ 1 APPPATH/Views/news/view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/view', [], true)
+ 5 APPPATH/Controllers/News.php(39): view('news/view')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('say-it-isnt-so')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 18:55:56 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/view.php on line 6.
+ 1 APPPATH/Views/news/view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/view', [], true)
+ 5 APPPATH/Controllers/News.php(39): view('news/view')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('say-it-isnt-so')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 18:56:01 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/view.php on line 6.
+ 1 APPPATH/Views/news/view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/view.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/view', [], true)
+ 5 APPPATH/Controllers/News.php(39): view('news/view')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('say-it-isnt-so')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 18:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 18:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-05 19:00:21 --> CSRF token verified.
+CRITICAL - 2024-02-05 19:23:18 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:23:43 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:24:27 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:24:47 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:25:23 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:26:57 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:27:11 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-05 19:27:15 --> ErrorException: Undefined index: imagen
+in APPPATH/Views/news/update.php on line 26.
+ 1 APPPATH/Views/news/update.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: imagen', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(144): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('2')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-05 19:29:09 --> CSRF token verified.
+INFO - 2024-02-05 19:29:40 --> CSRF token verified.
+INFO - 2024-02-05 19:30:43 --> CSRF token verified.
+INFO - 2024-02-05 19:30:51 --> CSRF token verified.
+INFO - 2024-02-05 19:36:35 --> CSRF token verified.

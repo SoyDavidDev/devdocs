@@ -1,0 +1,1834 @@
+ERROR - 2024-01-31 11:13:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4basedatos', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:13:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:19:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:19:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:19:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:19:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:19:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:19:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:19:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:19:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:20:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:20:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:21:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:21:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 11:42:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:185
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci4database', 8889, '', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(13): App\Models\NewsModel->getNews()
+#7 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->index()
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-31 11:42:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category`=`category`.`id`', [], false)
+ 3 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/NewsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(13): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 12:03:21 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 12:03:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 12:03:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 12:03:21 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 12:03:25 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 12:03:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 12:03:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 12:03:25 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 16:17:46 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 16:17:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:17:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:17:46 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 16:23:47 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 16:23:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:23:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:23:47 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 16:24:04 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 16:24:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:24:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:24:04 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 16:26:04 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 16:26:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:26:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:26:04 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 16:26:05 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 16:26:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:26:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:26:05 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 16:26:11 --> mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause' in /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Applications/MAMP/htdocs/ci4basedatos/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*...', 0)
+#1 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*...')
+#2 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*...')
+#3 /Applications/MAMP/htdocs/ci4basedatos/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*...', Array, false)
+#4 /Applications/MAMP/htdocs/ci4basedatos/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/ci4basedatos/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/ci4basedatos/app/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/ci4basedatos/app/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+#8 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+#9 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#10 /Applications/MAMP/htdocs/ci4basedatos/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/ci4basedatos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 16:26:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:26:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 16:26:11 --> [Caused by] mysqli_sql_exception: Unknown column 'cagegory.id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = \'elvis-sighted\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `news`.*, `category`.`category`
+FROM `news`
+JOIN `category` ON `news`.`id_category` = `cagegory`.`id`
+WHERE `slug` = :slug:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/NewsModel.php(22): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/News.php(28): App\Models\NewsModel->getNews('elvis-sighted')
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->show('elvis-sighted')
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 18:09:13 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:05:09 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:13:00 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:13:31 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:14:19 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 20:25:54 --> CSRF token verified.
+INFO - 2024-01-31 20:27:12 --> CSRF token verified.
+CRITICAL - 2024-01-31 20:30:01 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:09 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:31 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:32 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:41 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:54 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:55 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:30:55 --> ErrorException: Undefined variable: news_item
+in APPPATH/Views/news/index.php on line 2.
+ 1 APPPATH/Views/news/index.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: news_item', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php', 2, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/index', [], true)
+ 5 APPPATH/Controllers/News.php(35): view('news/index')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 20:32:27 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:05:06 --> ErrorException: Undefined index: id
+in APPPATH/Views/news/update.php on line 8.
+ 1 APPPATH/Views/news/update.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 8, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(138): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:13:01 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:19:48 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:20:27 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:21:09 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:21:11 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:21:11 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:21:13 --> ErrorException: Undefined index: id
+in APPPATH/Views/news/update.php on line 8.
+ 1 APPPATH/Views/news/update.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', '/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php', 8, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/ci4basedatos/app/Views/news/update.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('news/update', [], true)
+ 5 APPPATH/Controllers/News.php(138): view('news/update')
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->update('1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:26:11 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:26:30 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(15): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 21:40:37 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:02:38 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:05:41 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:46:34 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 22:49:17 --> CSRF token verified.
+CRITICAL - 2024-01-31 22:54:30 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:54:34 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:54:50 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:58:42 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 22:59:42 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 23:02:37 --> Error: Class 'Codeigniter\Model' not found
+in APPPATH/Models/CategoryModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(309): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/MAMP/htdocs/ci4basedatos/app/Models/CategoryModel.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoryModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoryModel')
+ 5 [internal function]: spl_autoload_call('App\\Models\\CategoryModel')
+ 6 SYSTEMPATH/Config/Factories.php(280): class_exists('App\\Models\\CategoryModel')
+ 7 SYSTEMPATH/Config/Factories.php(199): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoryModel')
+ 8 SYSTEMPATH/Config/Factories.php(158): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoryModel', [...])
+ 9 SYSTEMPATH/Common.php(813): CodeIgniter\Config\Factories::__callStatic('models', [...])
+10 APPPATH/Controllers/News.php(47): model('App\\Models\\CategoryModel')
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\News->new()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 23:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:10:42 --> CSRF token verified.
+INFO - 2024-01-31 23:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:39:44 --> CSRF token verified.
+INFO - 2024-01-31 23:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:40:27 --> CSRF token verified.
+INFO - 2024-01-31 23:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:40:31 --> CSRF token verified.
+CRITICAL - 2024-01-31 23:40:34 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('news/create', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 23:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:41:28 --> CSRF token verified.
+INFO - 2024-01-31 23:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:41:55 --> CSRF token verified.
+INFO - 2024-01-31 23:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:42:23 --> CSRF token verified.
+INFO - 2024-01-31 23:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-31 23:43:18 --> CSRF token verified.
+CRITICAL - 2024-01-31 23:43:22 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 300.
+ 1 SYSTEMPATH/Security/Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(184): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('news/create', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-31 23:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
