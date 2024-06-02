@@ -1,11 +1,10 @@
-https://soydaviddev.reflex.run/
-
 ![Mi portfolio](https://github.com/SoyDavidDev/devdocs/blob/main/phytonweb/link_bio/assets/projects/408shots_so.png)
-
 
 # Mi Portafolio Personal
 
 ¡Bienvenido a mi portafolio personal! Este proyecto, desarrollado con Python y Reflex, presenta mis habilidades, experiencia y proyectos destacados en el ámbito del desarrollo de software y tecnología.
+
+https://soydaviddev.reflex.run/
 
 ## Descripción
 
