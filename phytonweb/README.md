@@ -1,7 +1,27 @@
-Mi portfolio desarrollado con Python y Reflex
-
-
 https://soydaviddev.reflex.run/
-Hola, mi nombre es David Sánchez 👋
 
-Software Developer || Web || Backend || Frontend || Python || Java || PHP || HTML-CSS-JavaScript || MySQL
+# Mi Portafolio Personal
+
+¡Bienvenido a mi portafolio personal! Este proyecto, desarrollado con Python y Reflex, presenta mis habilidades, experiencia y proyectos destacados en el ámbito del desarrollo de software y tecnología.
+
+## Descripción
+
+Este portafolio es una página de links donde comparto mi trayectoria profesional, proyectos en los que he trabajado y mis habilidades técnicas. Utilizo Reflex para crear una interfaz de usuario moderna y atractiva.
+
+## Tecnologías Utilizadas
+
+- **Lenguaje de programación:** Python
+- **Framework:** Reflex
+- **Estilos:** CSS, Bootstrap
+- **Otros:** HTML, JavaScript
+
+## Características
+
+- **Sección Sobre Mí:** Información detallada sobre mi carrera y objetivos.
+- **Proyectos:** Lista de proyectos destacados con descripciones y enlaces a repositorios.
+- **Habilidades:** Tecnologías y herramientas con las que tengo experiencia.
+- **Contacto:** Para que los visitantes puedan comunicarse conmigo fácilmente.
+
+---
+
+¡Gracias por visitar mi portafolio!
