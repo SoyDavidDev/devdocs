@@ -1,6 +1,6 @@
 https://soydaviddev.reflex.run/
 
-![Texto alternativo](phytonweb/link_bio/assets/projects/408shots_so.png)
+![Mi portfolio](https://github.com/SoyDavidDev/devdocs/blob/main/phytonweb/link_bio/assets/projects/408shots_so.png)
 
 
 # Mi Portafolio Personal
