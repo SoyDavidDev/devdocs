@@ -29,9 +29,25 @@ def links() -> rx.Component:
         title("Proyectos"),
         link_button(
             "Mi Web de enlaces",
-            "Página desarrollada con Python y REFLEX",
+            "Python y REFLEX",
             "icons/python.svg",
             constants.WEB_LINKS
+        ),
+        rx.image(
+            src="projects/408shots_so.png",
+            width="100%",
+            margin_y=Size.MEDIUM.value
+        ),
+        link_button(
+            "Tudú App",
+            "Django, Python, DRF, Vue.js, Vuetify, PostgreSQL",
+            "icons/python.svg",
+            constants.TUDU_APP_BACKEND
+        ),
+        rx.image(
+            src="projects/195shots_so.png",
+            width="100%",
+            margin_y=Size.MEDIUM.value
         ),
         title("Contacto"),
         link_button(

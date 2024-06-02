@@ -48,25 +48,29 @@ def header()-> rx.Component:
                 "años de formación"
             ),            
             rx.spacer(),
-            # info_text(
-            #     f"{experience()}+",
-            #     "años de experiencia"
-            # ), Poner cuando tenga experiencia. :) 
+            info_text(
+                f"{experience()-1}+",
+                "años de experiencia"
+            ), 
             width="100%"
         ),
-        rx.text("""Formado en: Python, Java, PHP, HTML-CSS-JS, MySQL y C#.
+        rx.text("""Python, Java, PHP, HTML-CSS-JS, MySQL y C#.
             Frameworks/librerías como DJANGO, LARAVEL, BOOTSTRAP, ANGULAR,
-            REACT, SPRING y REFLEX.
-            Aquí podrás encontrar todos mis enlaces de interés, Linkedin, 
-            GIT-HUB y demás proyectos (en construcción)""",
+            REACT, SPRING y REFLEX.""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
             text_align = "center",
         ),
 
-        rx.text("""Cursando 2º Desarrollo apps web (DAW)""",
+        rx.text("""Software Developer || Web || Backend || Frontend || FullStack""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
+        ),
+        rx.text("""Aquí podrás encontrar mis enlaces de interés, Linkedin, 
+            Git-Hub y proyectos personales. ¡Gracias por visitar mi página!""",
+            font_size=Size.DEFAULT.value,
+            color=TextColor.BODY.value,
+            text_align = "center",
         ),
         rx.text("""¡Bienvenid@!""",
             font_size=Size.DEFAULT.value,

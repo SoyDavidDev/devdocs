@@ -38,7 +38,7 @@ app = rx.App(
 app.add_page(
     index,
     title="SoyDavidDev | Aprendiendo y trabajando en programación y desarrollo de software",
-    description="Hola, mi nombre es David Sánchez, Soy Desarrollador Web en formación. |Developer|Backend|Frontend|FullStack|",
+    description="Hola, mi nombre es David Sánchez, Soy Desarrollador Web. |Developer|Backend|Frontend|FullStack|",
     image="favicon.ico"
 )
 app.compile()
