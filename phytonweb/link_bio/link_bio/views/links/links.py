@@ -30,24 +30,31 @@ def links() -> rx.Component:
         link_button(
             "Mi Web de enlaces",
             "Python y REFLEX",
-            "icons/python.svg",
+            "icons/reflex.svg",
             constants.WEB_LINKS
         ),
-        rx.image(
-            src="projects/408shots_so.png",
-            width="100%",
-            margin_y=Size.MEDIUM.value
+        rx.spacer(Size.SMALL.value),
+        rx.vstack(
+            link_button(
+                "Tudú App (Backend)",
+                "Django, DRF, PostgreSQL",
+                "icons/django.svg",
+                constants.TUDU_APP_BACKEND
+            ),
+            link_button(
+                "Tudú App (Frontend)",
+                "Vue.js, Vuetify, Axios, Vuex",
+                "icons/vuejs.svg",
+                constants.TUDU_APP_FRONTEND
+            ),
+
         ),
+        title("Proyectos donde colaboro"),
         link_button(
-            "Tudú App",
-            "Django, Python, DRF, Vue.js, Vuetify, PostgreSQL",
-            "icons/python.svg",
-            constants.TUDU_APP_BACKEND
-        ),
-        rx.image(
-            src="projects/195shots_so.png",
-            width="100%",
-            margin_y=Size.MEDIUM.value
+            "Live4Life (Fullstack)",
+            "Django, Vue.js, PostgreSQL, Docker",
+            "icons/django.svg",
+            constants.LIVE_4_LIFE
         ),
         title("Contacto"),
         link_button(

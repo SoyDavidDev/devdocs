@@ -13,4 +13,5 @@ WHATSAPP = "https://wa.me/34635990275?text=Hello%2C%20World!"
 WEB_LINKS = "https://github.com/SoyDavidDev/devdocs/tree/main/phytonweb"
 TUDU_APP_BACKEND = "https://github.com/SoyDavidDev/tudusBackend"
 TUDU_APP_FRONTEND = "https://github.com/SoyDavidDev/tuduFrontend"
+LIVE_4_LIFE = "https://live4life.site/"
 

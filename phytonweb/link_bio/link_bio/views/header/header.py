@@ -54,17 +54,17 @@ def header()-> rx.Component:
             ), 
             width="100%"
         ),
-        rx.text("""Python, Java, PHP, HTML-CSS-JS, MySQL y C#.
-            Frameworks/librerías como DJANGO, LARAVEL, BOOTSTRAP, ANGULAR,
-            REACT, SPRING y REFLEX.""",
+        rx.text("""Software Developer - Web - Backend - Frontend - FullStack""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
             text_align = "center",
         ),
 
-        rx.text("""Software Developer || Web || Backend || Frontend || FullStack""",
+        rx.text("""Aprendiendo y trabajando en programación web y desarrollo 
+                de software.""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
+            text_align = "center",
         ),
         rx.text("""Aquí podrás encontrar mis enlaces de interés, Linkedin, 
             Git-Hub y proyectos personales. ¡Gracias por visitar mi página!""",
@@ -75,6 +75,7 @@ def header()-> rx.Component:
         rx.text("""¡Bienvenid@!""",
             font_size=Size.DEFAULT.value,
             color=TextColor.BODY.value,
+            text_align = "center",
         ),
         spacing = Size.BIG.value,
         align_items= "center",

@@ -16,7 +16,7 @@ def footer() -> rx.Component:
                 f"© 2022-{datetime.date.today().year} ",
                 rx.span(" by SoyDavidDev. ",
                         color = Color.PRIMARY.value),
-                        " vBeta."
+                        " v2.0."
             ),
             href=const.LINKEDIN_URL,
             is_external=True,
