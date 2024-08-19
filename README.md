@@ -1,4 +1,4 @@
-# Retos lenguajes Programación de 2ºDAW y otros de manera autodidacta:
+# Proyectos Autodidactas y Retos en Programación: PHP, Python, Angular, IA y más:
 
 - PHP.
 - Python ejercicios y proyecto Juego Alien.
