@@ -5,3 +5,4 @@
 - Python Web con Reflex. Mi primer portfolio y web de enlaces.
 - CodeIgniter.
 - Angular.
+- Traductor App con IA. Whisper.
