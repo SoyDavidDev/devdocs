@@ -1,0 +1,2 @@
+- WARP: Terminal con IA integrada. 
+
